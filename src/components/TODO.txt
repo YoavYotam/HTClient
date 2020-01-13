@@ -1,0 +1,11 @@
+TODO:
+{} send a key to the server -> server handles and sends back the list of markers
+{} 
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
