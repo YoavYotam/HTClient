@@ -1,33 +1,36 @@
 import React, { Component } from "react";
-import { Form, Segment} from "semantic-ui-react";
+import { Form, Segment } from "semantic-ui-react";
 
-//needs to send a list of markers
 class LabelHandler extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      event:"",
+      label: []
     };
   }
 
-  handleSubmit = (event) => {
-    const {event} = this.state;
-
-    const event = event;
-
-    this.props.socket.emit(`services/${event}`, event);
+  handleSubmit = route => {
+    this.props.updateUrl(route);
   };
-  
 
   render() {
-
     return (
-      <Segment> 
+      <Segment>
         <div>
-          <Form >
+          <Form>
             <Form.Group>
-              <Form.Button content="Foods" onSubmit={this.handleSubmit("")}/>
-              <Form.Button content="Consumables" onSubmit={this.handleSubmit("")}/>
+              <Form.Button
+                content="Foods"
+                onClick={() =>
+                  this.handleSubmit("http://localhost:3005/services/food")
+                }
+              />
+              <Form.Button
+                content="Events"
+                onClick={() =>
+                  this.handleSubmit("http://localhost:3005/services/event")
+                }
+              />
             </Form.Group>
           </Form>
         </div>
