@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Form, Segment } from "semantic-ui-react";
-import { Icon } from 'semantic-ui-react'
 
 class LabelHandler extends Component {
   constructor(props) {

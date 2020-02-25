@@ -1,5 +1,5 @@
 import React from "react";
-import { Header, Container } from "semantic-ui-react";
+import { Header, Container,} from "semantic-ui-react";
 import LabelHandler from "./labelhandler";
 import MapHandler from "./maphandler";
 
@@ -21,7 +21,7 @@ class App extends React.PureComponent {
     return (
       <div className="main">
         <div className="header">
-          <Header as="h2">Welcome to HomeTown App! </Header>
+          <Header as="h2">Welcome to Your HomeTown</Header>
         </div>
 
         <div >

@@ -5,13 +5,13 @@ import { Map, TileLayer, Marker, Popup } from "react-leaflet";
 // import food from '../assets/Location_Icons/png/Food_1.png'
 // import event from '../assets/Location_Icons/png/Flag_8.png'
 var foodIcon = L.icon({
-  iconUrl: require('../assets/Food_5.png'),
+  iconUrl: require('../assets/restaurant.png'),
    iconSize: [25, 41],
   iconAnchor: [12 / 5.41],
   popupAnchor: [0, -41]
 });
 var eventIcon = L.icon({
-  iconUrl: require('../assets/Infos_4.png'),
+  iconUrl: require('../assets/map.png'),
    iconSize: [25, 41],
   iconAnchor: [12 / 5.41],
   popupAnchor: [0, -41]

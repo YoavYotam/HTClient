@@ -1,10 +1,8 @@
-Please Install:\
+Please Install:
 npm install\
 npm create-react-app\
 npm install semantics-ui-react\
-npm install leaflet-react
-
-***IMPORTANT: in MapHandler, there are two variables, foodIcon and eventIcon, in the require() a file or url should be inserted and then everything will work
+npm install leaflet-react\
 
 if i forgot anything let me know
 
